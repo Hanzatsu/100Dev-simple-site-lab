@@ -1,61 +1,62 @@
-body{
-    background-color: lightblue;
-    padding: 50px;
-    border:10px solid lightgreen;
-    margin: 60px;
-    height: 700px;
+
+  :root {
+    font-size: calc(1rem + 0.5vw);
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.5ch solid rgba(72,205,49,255);
+    margin: 1.5rem;
+    padding: 2.5rem;
+    height: auto; 
+    background: rgba(135,206,235,255);
+    color: rgba(238,238,238,255); 
+  }
+      
+  h1{
+      text-align: center;
+      font-family: serif;
+      font-style: italic;
+  }
+
+ #top_nav{
+     display: flex;
+     padding: auto;
+     margin: auto;
+     justify-content: center;
+     line-height: 1px;
+ }
+ li{
+     list-style-type: none;
+     padding: .5em;
+
+ }
+ li + li {
+    border-left: 2px solid rgba(128,136,139,255);
+
 }
-body > h1{
-    font-style: italic;
-    color: white;
-    background: lightblue;
-    display: inline-block;
-    position: relative;
-    left: 500px;
-    font-size: 45px;
-    bottom: 50px;
-}
-#top_nav li{
-    display: inline-block;
-    position:relative;
-    left: 625px;
-    color: white;
-    bottom: 60px;
-    font-size: 20px;
-}
-section > h1{
-    padding:5px 10px;
-    font-weight: bolder;
-    color: white;
-    background: lightblue;
-    position: relative;
-    bottom:50px;
-    font-size: 35px;
-}
-h2{
-    color: white;
-    background: lightblue;
-}
-p{
-    padding: 0px 10px;
-    margin: 0 250px 10px 0;
-    line-height: 24px;
-    color: white;
-    position: relative;
-    bottom: 60px;
-    font-size: 20px;
-}
-.image_image{
-    margin: auto 5px;
-    float: right;
-    width: 250px;
-    height: 350px;
-    position: relative;
-    bottom: 300px;
-}
-#ul_socials li{
-    display: inline-block;
-    position: relative;
-    left: 625px;
-    font-size: 20px;
-}
+ 
+ 
+ /* clearfix floating images*/
+  section::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  img{
+      width: 250px;
+      height: auto;
+      display: flex;
+      float: right;
+    }
+    #ul_socials{
+        display: flex;
+        padding: auto;
+        margin: auto;
+        justify-content: center;
+        line-height: 1px;
+    }
+    a {
+        color: green;
+        font-weight: 600;
+      }
+
